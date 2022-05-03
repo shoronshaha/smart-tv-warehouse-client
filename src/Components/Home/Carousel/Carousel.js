@@ -3,7 +3,7 @@ import React from 'react';
 const Carousel = () => {
     return (
 
-        <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide relative mb-5" data-bs-ride="carousel">
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                 <button
                     type="button"
@@ -29,35 +29,35 @@ const Carousel = () => {
             <div className="carousel-inner relative w-full h-[45vw] overflow-hidden">
                 <div className="carousel-item active relative float-left w-full">
                     <img
-                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-                        className="block w-full"
+                        src="https://i.ibb.co/y0gnw3L/banner1.png"
+                        className="block h-[45vw] w-full"
                         alt="..."
                     />
-                    <div className="carousel-caption md:block absolute text-center">
-                        <h5 className="text-xl">First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                    <div className="carousel-caption md:block absolute md:text-left md:position-0">
+                        <h5 className="text-2xl">Welcome to my SMART TV warehouse</h5>
+
                     </div>
                 </div>
                 <div className="carousel-item relative float-left w-full">
                     <img
-                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-                        className="block w-full"
+                        src="https://i.ibb.co/Q9Gs1tX/banner2.png"
+                        className="block h-[45vw] w-full"
                         alt="..."
                     />
                     <div className="carousel-caption md:block absolute text-center">
-                        <h5 className="text-xl">Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+
+
                     </div>
                 </div>
                 <div className="carousel-item relative float-left w-full">
                     <img
-                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-                        className="block w-full"
+                        src="https://i.ibb.co/HpT7txn/banner3.png"
+                        className="block h-[45vw] w-full"
                         alt="..."
                     />
-                    <div className="carousel-caption md:block absolute text-center bottom-[10vw]">
-                        <h5 className="text-xl">Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <div className="carousel-caption md:block absolute text-center">
+
+
                     </div>
                 </div>
             </div>

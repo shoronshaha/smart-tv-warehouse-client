@@ -12,7 +12,7 @@ const Navbar = () => {
 
     let [open, setOpen] = useState(false);
     return (
-        <div className='shadow-md w-full top-0 left-0'>
+        <div className='shadow-md w-full top-0 left-0 '>
             <div className='md:flex items-center justify-between bg-white py-2 md:px-10 px-7'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800'>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/about'>ABOUT</CustomLink></li>
                     {
                         user ?
-                            <li onClick={handleSignOut} className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>SIGN-OUT</CustomLink></li>
+                            <li onClick={handleSignOut} className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>LOGOUT</CustomLink></li>
                             :
                             <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>LOGIN</CustomLink></li>
                     }
