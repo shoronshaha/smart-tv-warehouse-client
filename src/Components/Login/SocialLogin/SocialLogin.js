@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase/Firebase.init';
 import Loading from '../../Shared/Loading/Loading';
@@ -35,9 +35,10 @@ const SocialLogin = () => {
             </div>
             {errorElement}
             <div>
-                <button value="button" onClick={() => signInWithGoogle()} className="px-4 py-2 rounded-full bg-green-500 text-white hover:bg-green-700 my-4 w-full" > Google Sign In</button>
+                <button value="button" onClick={() => signInWithGoogle()} className="py-2 rounded-full bg-green-500 text-white hover:bg-green-700 my-4 w-full " > Google Sign In</button>
                 <button value="button" className="px-4 py-2 rounded-full bg-indigo-400 text-white hover:bg-indigo-700 my-4 w-full" > Github Sign In</button>
-                <button value="button" className="px-4 py-2 rounded-full bg-blue-400 text-white hover:bg-blue-700 my-4 w-full "> Facebook Sign In</button>
+                <button value="button" className="px-4 py-2 rounded-full bg-blue-400 text-white hover:bg-blue-700 my-4 w-full mb-10 "> Facebook Sign In</button>
+
             </div>
         </div>
     );
