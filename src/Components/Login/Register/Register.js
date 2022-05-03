@@ -5,9 +5,10 @@ import password from '../../../Images/icons/password.png';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../Firebase/Firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-// import Loading from '../../Shared/Loading/Loading';
+import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 
@@ -27,9 +28,9 @@ const Register = () => {
         navigate('/login');
     }
 
-    // if (loading || updating) {
-    //     return <Loading></Loading>
-    // }
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
 
     const handleRegister = async (event) => {
         event.preventDefault();
@@ -75,6 +76,7 @@ const Register = () => {
                     <Link to="/login" className=' text-blue-500 no-underline mx-2 cursor-pointer' onClick={navigateLogin}>Please Login</Link>
                 </p>
                 <div>
+                    <SocialLogin></SocialLogin>
 
                     <ToastContainer />
                 </div>
