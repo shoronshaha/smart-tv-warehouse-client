@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
 import CustomLink from '../CustomLink/CustomLink';
 import logo from '../../../Images/Logo/tv logo.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../Firebase/Firebase.init';
 const Navbar = () => {
-    let Links = [
-        { id: 1, name: "HOME", link: "/" },
-        { id: 2, name: "ADD ITEMS", link: "/addItems" },
-        { id: 3, name: "MY ITEMS", link: "/myItems" },
-        { id: 4, name: "MANAGE ITEMS", link: "/manageInventors" },
-        { id: 5, name: "BLOG'S", link: "/blogs" },
-        { id: 6, name: "ABOUT", link: "/about" },
-    ];
+    const [user] = useAuthState(auth);
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     let [open, setOpen] = useState(false);
     return (
         <div className='shadow-md w-full top-0 left-0'>
@@ -29,15 +28,23 @@ const Navbar = () => {
 
                 <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 font-[Poppins] ease-in block ${open ? 'top-18 ' : 'top-[-490px]'}`}>
 
+                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/home'>HOME</CustomLink></li>
                     {
-                        Links.map((link) => (
-                            <li key={link.id} className='md:ml-6 text-[16px] md:my-0 my-7'>
-                                <Link to={link.link} className='text-gray-800 hover:text-gray-400 bg-white duration-500 font-bold'>{link.name}</Link>
-                            </li>
-                        ))
-                    }
+                        user && <>
+                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/addItems'>ADD ITEMS</CustomLink></li>
+                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/myItems'>MY ITEMS</CustomLink></li>
+                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/manageInventors'>MANAGE ITEMS</CustomLink></li>
+                        </>
 
-                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>LOGIN</CustomLink></li>
+                    }
+                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/blog'>BLOGS</CustomLink></li>
+                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/about'>ABOUT</CustomLink></li>
+                    {
+                        user ?
+                            <li onClick={handleSignOut} className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>SIGN-OUT</CustomLink></li>
+                            :
+                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/login'>LOGIN</CustomLink></li>
+                    }
                 </ul>
 
             </div>
