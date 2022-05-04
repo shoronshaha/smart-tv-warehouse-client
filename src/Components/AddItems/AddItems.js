@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddItems = () => {
     return (
-        <div className="mt-20 min-h-screen w-full">
+        <div className="mt-20 w-full">
             <div className="bg-gray-200 p-10 md:w-3/4 lg:w-1/2 mx-auto">
                 <form>
                     <div className="flex items-center mb-5">

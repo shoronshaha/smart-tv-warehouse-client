@@ -37,7 +37,7 @@ const Navbar = () => {
                         </>
 
                     }
-                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/blog'>BLOGS</CustomLink></li>
+                    <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/blogs'>BLOGS</CustomLink></li>
                     <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/about'>ABOUT</CustomLink></li>
                     {
                         user ?
