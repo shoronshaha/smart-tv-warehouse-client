@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
+import AddItems from './Components/AddItems/AddItems';
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
@@ -12,11 +13,12 @@ function App() {
 
   return (
 
-    <div className='App'>
+    <div >
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/addItems' element={<AddItems></AddItems>}></Route>
         <Route path='/manageItems' element={<AllManageItem></AllManageItem>}></Route>
         <Route path='/about' element={<About></About>}></Route>
 
