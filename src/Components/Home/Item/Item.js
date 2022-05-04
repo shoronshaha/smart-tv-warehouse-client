@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Item = ({ manageItem }) => {
-    const { brand, img, price, description, quantity, supplierName } = manageItem
+    const { _id, brand, img, price, description, quantity, supplierName } = manageItem
+    const navigate = useNavigate();
+
+    const navigateToItemDetail = _id => {
+        navigate(`/item/${brand}`);
+    }
     return (
         <div className="flex justify-center mt-6">
 
@@ -19,7 +25,7 @@ const Item = ({ manageItem }) => {
                     <p className='text-xl mb-2'>Price:$ {price}</p>
 
 
-                    <button type="button" className=" inline-block px-6 py-2.5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">Stock-Update</button>
+                    <button onClick={() => navigateToItemDetail(_id)} type="button" className=" inline-block px-6 py-2.5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">Stock-Update</button>
                 </div>
             </div>
         </div>

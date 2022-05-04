@@ -5,7 +5,7 @@ import Item from '../Item/Item';
 const Items = () => {
     const [manageItems, setManageItems] = useManageItems();
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 justify-items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-3 sm:gird-cols-2 justify-items-center'>
             {
                 manageItems.map(manageItem => manageItem._id < 7 && <Item
                     key={manageItem._id}
