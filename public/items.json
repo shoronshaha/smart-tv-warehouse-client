@@ -5,7 +5,7 @@
         "price": "50000",
         "quantity": "15",
         "supplierName":"Smaran Shaha",
-        "description": "Whether combined with our Real or UHD technology, our 8K and 4K resolutions deliver detailed pictures, natural blacks, lifelike colors and precisely balanced lighting",
+        "description": "Whether combined with our Real or UHD technology,our 8K and 4K resolutions deliver detailed pictures",
         "img": "https://i.ibb.co/gMY4PWM/pngfind-com-smart-tv-png-6085707.png"
     },
       {
@@ -21,7 +21,7 @@
         "_id": 3,
         "brand": "LG",
         "price": "60000",
-        "quantity": "30000",
+        "quantity": "30",
         "supplierName":"Kamal Ahamed",
         "description": "Whether combined with our Real or UHD technology, our 8K and 4K resolutions deliver detailed pictures, natural blacks, lifelike colors and precisely balanced lighting",
         "img": "https://i.ibb.co/B60tCW6/Png-Item-1066168.png"

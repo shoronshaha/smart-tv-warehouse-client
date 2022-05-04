@@ -33,7 +33,7 @@ const Navbar = () => {
                         user && <>
                             <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/addItems'>ADD ITEMS</CustomLink></li>
                             <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/myItems'>MY ITEMS</CustomLink></li>
-                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/manageInventors'>MANAGE ITEMS</CustomLink></li>
+                            <li className='md:ml-8 text-[16px] md:my-0 my-7 text-gray-800 hover:text-gray-400 duration-500 font-bold '><CustomLink to='/manageItems'>MANAGE ITEMS</CustomLink></li>
                         </>
 
                     }
