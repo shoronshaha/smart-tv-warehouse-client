@@ -4,7 +4,7 @@ const useManageItems = () => {
     const [manageItems, setManageItems] = useState([]);
 
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/item')
             .then(res => res.json())
             .then(data => setManageItems(data))
     }, []);

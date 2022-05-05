@@ -6,7 +6,7 @@ const Item = ({ manageItem }) => {
     const navigate = useNavigate();
 
     const navigateToItemDetail = _id => {
-        navigate(`/item/${brand}`);
+        navigate(`/item/${_id}`);
     }
     return (
         <div className="flex justify-center mt-6">
