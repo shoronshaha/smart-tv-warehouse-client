@@ -11,17 +11,22 @@ import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
 import Footer from './Components/Shared/Footer/Footer';
 import Navbar from './Components/Shared/Navbar/Navbar';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
   return (
 
-    <div >
+    <div className='bg-pink-200'>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/addItems' element={<AddItems></AddItems>}></Route>
+        <Route path='/addItems' element={
+          <RequireAuth>
+            <AddItems></AddItems>
+          </RequireAuth>
+        }></Route>
         <Route path='/manageItems' element={
           <RequireAuth>
             <AllManageItem></AllManageItem>
@@ -36,6 +41,7 @@ function App() {
 
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
