@@ -6,6 +6,10 @@ const ItemDetails = () => {
     return (
         <div>
             <h1 className='text-3xl'>welcome to details: {itemId}</h1>
+
+            <img src="img" alt="" />
+
+
         </div>
     );
 };
