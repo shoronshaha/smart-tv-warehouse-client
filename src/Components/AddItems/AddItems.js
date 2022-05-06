@@ -23,11 +23,20 @@ const AddItems = () => {
             description: event.target.description.value,
             img: event.target.img.value,
         };
-        const { data } = await axios.post('http://localhost:5000/addItems', addItem);
-        if (!data.success) {
-            return toast.error(data.error)
-        }
-        toast.success(data.message);
+        await axios.post('http://localhost:5000/addItem', addItem)
+            // if (!data.success) {
+            //     return toast.error(data.error)
+            // }
+            // toast.success(data.message);
+            .then(response => {
+                const { data } = response;
+                if (data.insertedId) {
+                    toast('your item is added !!');
+                    event.target.reset();
+                }
+
+
+            })
     }
 
     return (
