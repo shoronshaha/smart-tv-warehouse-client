@@ -12,6 +12,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import Navbar from './Components/Shared/Navbar/Navbar';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
 import { ToastContainer } from 'react-toastify';
+import MyItems from './Components/MyItems/MyItems';
 
 function App() {
 
@@ -25,6 +26,11 @@ function App() {
         <Route path='/addItems' element={
           <RequireAuth>
             <AddItems></AddItems>
+          </RequireAuth>
+        }></Route>
+        <Route path='/myItems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
           </RequireAuth>
         }></Route>
         <Route path='/manageItems' element={

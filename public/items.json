@@ -1,6 +1,5 @@
 [
       {
-        "_id": 1,
         "brand": "SAMSUNG",
         "price": "50000",
         "quantity": "15",
@@ -9,7 +8,6 @@
         "img": "https://i.ibb.co/gMY4PWM/pngfind-com-smart-tv-png-6085707.png"
     },
       {
-        "_id": 2,
         "brand": "SONY ",
         "price": "35000",
         "quantity": "10",
@@ -18,7 +16,6 @@
         "img": "https://i.ibb.co/BydV4Xy/pngfind-com-tv-top-view-png-3722284.png"
     },
       {
-        "_id": 3,
         "brand": "LG",
         "price": "60000",
         "quantity": "30",
@@ -27,7 +24,6 @@
         "img": "https://i.ibb.co/B60tCW6/Png-Item-1066168.png"
     },
       {
-        "_id": 4,
         "brand": "VIVO",
         "price": "25000",
         "quantity": "40",
@@ -37,7 +33,6 @@
         
     },
       {
-        "_id": 5,
         "brand": "WALTON",
         "price": "15000",
         "quantity": "30",
@@ -46,7 +41,6 @@
         "img": "https://i.ibb.co/ykjbxPn/Png-Item-1755664.png"
     },
       {
-        "_id": 6,
         "brand": "HP",
         "price": "40000",
         "quantity": "20",
@@ -57,7 +51,6 @@
         
     },
       {
-        "_id": 7,
         "brand": "SONY",
         "price": "30000",
         "quantity": "50",
@@ -66,7 +59,6 @@
         "img": "https://i.ibb.co/ZTdK7FG/Png-Item-2425144-1.png"
     },
       {
-        "_id": 8,
         "brand": "Dell",
         "price": "30000",
         "quantity": "10",
@@ -76,7 +68,6 @@
        
     },
       {
-        "_id": 9,
         "brand": "VIVO",
         "price": "45000",
         "quantity": "5",
@@ -85,7 +76,6 @@
         "img": "https://i.ibb.co/64R20K3/Png-Item-4449563.png"
     },
       {
-        "_id": 10,
         "brand": "LG",
         "price": "17000",
         "quantity": "20",
@@ -94,7 +84,6 @@
         "img": "https://i.ibb.co/g4b2JW4/rev-home06.png"
     },
       {
-        "_id": 11,
         "brand": "WALTON",
         "price": "20000",
         "quantity": "20",
@@ -103,7 +92,6 @@
         "img": "https://i.ibb.co/zSL5cVf/pngfind-com-flat-screen-tv-on-3513033.png"
     },
       {
-        "_id": 12,
         "brand": "SAMSUNG",
         "price": "45000",
         "quantity": "15",
@@ -112,7 +100,6 @@
         "img": "https://i.ibb.co/gMY4PWM/pngfind-com-smart-tv-png-6085707.png"
     },
       {
-        "_id": 13,
         "brand": "LG",
         "price": "30000",
         "quantity": "25",
@@ -121,7 +108,6 @@
         "img": "https://i.ibb.co/6b1Sbph/Png-Item-1755412.png"
     },
       {
-        "_id": 14,
         "brand": "VIVO",
         "price": "27000",
         "quantity": "12",
@@ -130,7 +116,6 @@
         "img": "https://i.ibb.co/gMY4PWM/pngfind-com-smart-tv-png-6085707.png"
     },
       {
-        "_id": 15,
         "brand": "LG",
         "price": "45000",
         "quantity": "25",
@@ -139,7 +124,6 @@
         "img": "https://i.ibb.co/ZTdK7FG/Png-Item-2425144-1.png"
     },
       {
-        "_id": 16,
         "brand": "SONY",
         "price": "30000",
         "quantity": "12",
