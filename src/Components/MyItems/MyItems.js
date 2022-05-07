@@ -1,17 +1,33 @@
 import axios from 'axios';
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../Firebase/Firebase.init';
 
 const MyItems = () => {
     const [user] = useAuthState(auth)
     const [addItems, setAddItems] = useState([]);
+    const navigate = useNavigate();
     useEffect(() => {
         const getAddItems = async () => {
             const email = user.email;
             const url = `http://localhost:5000/addItem?email=${email}`;
-            const { data } = await axios.get(url);
-            setAddItems(data);
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                });
+                setAddItems(data);
+            }
+            catch (error) {
+                console.log(error.message);
+                if (error.response.status === 401 || error.response.status === 403) {
+                    signOut(auth);
+                    navigate('/login');
+                }
+            }
 
         }
         getAddItems();
