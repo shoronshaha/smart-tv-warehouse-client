@@ -39,7 +39,11 @@ function App() {
             <AllManageItem></AllManageItem>
           </RequireAuth>
         }></Route>
-        <Route path='/item/:itemId' element={<ItemDetails></ItemDetails>}></Route>
+        <Route path='/item/:itemId' element={
+          <RequireAuth>
+            <ItemDetails></ItemDetails>
+          </RequireAuth>
+        }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
 
