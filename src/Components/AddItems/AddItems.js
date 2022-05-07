@@ -144,7 +144,7 @@ const AddItems = () => {
                     </div>
 
                     <div className="text-right">
-                        <button className="py-3 px-8 bg-green-400 text-white font-bold">Add</button>
+                        <button type='submit' className="py-3 px-8 bg-green-400 text-white font-bold">Add</button>
                     </div>
                 </form>
             </div>
