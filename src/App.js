@@ -10,6 +10,7 @@ import AllManageItem from './Components/ManageItems/AllManageItem/AllManageItem'
 import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
 import Footer from './Components/Shared/Footer/Footer';
 import Navbar from './Components/Shared/Navbar/Navbar';
+import NotFound from './Components/Shared/NotFound/NotFound';
 import ItemDetails from './Components/ItemDetails/ItemDetails';
 import { ToastContainer } from 'react-toastify';
 import MyItems from './Components/MyItems/MyItems';
@@ -46,10 +47,9 @@ function App() {
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/register' element={<Register />} />
-
+        <Route path='/register' element={<Register />}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />

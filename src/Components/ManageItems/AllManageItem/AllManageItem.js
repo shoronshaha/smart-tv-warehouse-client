@@ -1,6 +1,7 @@
 import React from 'react';
 import useManageItems from '../../Hooks/useManageItems';
 import icon from '../../../Images/Logo/delete.png'
+import { Link } from 'react-router-dom';
 
 const AllManageItem = () => {
     const [manageItems, setManageItems] = useManageItems();
@@ -73,8 +74,8 @@ const AllManageItem = () => {
                                     <td className="px-6 py-4">
                                         {manageItem.supplierName}
                                     </td>
-                                    <td className="px-6 py-4 text-right">
-                                        <button onClick={() => handleDelete(manageItem._id)}> <img src={icon} alt="" /></button>
+                                    <td className="px-2 py-2">
+                                        <button onClick={() => handleDelete(manageItem._id)}> <img src={icon} alt="Delete the Item" /></button>
                                     </td>
                                 </tr>
                             )
@@ -83,6 +84,16 @@ const AllManageItem = () => {
 
                 </tbody>
             </table>
+
+            <div className='text-center my-10'>
+                <Link
+                    to='/addItems'
+                    className='w-full my-5 py-2 px-3 text-white font-bold mt-3 bg-purple-500 sm:w-auto sm:mb-0 items-center'
+                >
+                    ADD - ITEMS
+                </Link>
+            </div>
+
         </div >
     );
 };

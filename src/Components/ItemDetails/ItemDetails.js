@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+
 
 const ItemDetails = () => {
     const { itemId } = useParams();
@@ -88,7 +89,14 @@ const ItemDetails = () => {
                     </div>
                 </div>
             </div>
-
+            <div className='text-center my-10'>
+                <Link
+                    to='/manageItems'
+                    className='w-full my-5 py-2 px-3 text-white font-bold mt-3 bg-purple-500 sm:w-auto sm:mb-0 items-center'
+                >
+                    MANAGE - ITEMS
+                </Link>
+            </div>
 
         </div>
     );
