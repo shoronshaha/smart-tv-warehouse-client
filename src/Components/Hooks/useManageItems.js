@@ -4,7 +4,7 @@ const useManageItems = () => {
     const [manageItems, setManageItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('https://gentle-depths-90710.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setManageItems(data))
     }, []);

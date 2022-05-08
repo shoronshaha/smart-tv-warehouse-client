@@ -23,7 +23,7 @@ const AddItems = () => {
             description: event.target.description.value,
             img: event.target.img.value,
         };
-        await axios.post('http://localhost:5000/addItem', addItem)
+        await axios.post('https://gentle-depths-90710.herokuapp.com/addItem', addItem)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

@@ -10,7 +10,7 @@ const ItemDetails = () => {
     let { brand, img, price, description, quantity, supplierName } = item;
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${itemId}`;
+        const url = `https://gentle-depths-90710.herokuapp.com/item/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -21,7 +21,7 @@ const ItemDetails = () => {
         let Remaining = parseFloat(+item.quantity) - 1;
         let newItem = { brand, img, price, description, quantity: Remaining, supplierName };
         setItem(newItem)
-        fetch(`http://localhost:5000/item/${itemId}`, {
+        fetch(`https://gentle-depths-90710.herokuapp.com/item/${itemId}`, {
             method: 'PUT',
             body: JSON.stringify(newItem),
             headers: {
@@ -41,7 +41,7 @@ const ItemDetails = () => {
         let newItem = { brand, img, price, description, quantity: updatedItemQuantity, supplierName }
         setItem(newItem);
 
-        fetch(`http://localhost:5000/item/${itemId}`, {
+        fetch(`https://gentle-depths-90710.herokuapp.com/item/${itemId}`, {
             method: 'PUT',
             body: JSON.stringify(newItem),
             headers: {

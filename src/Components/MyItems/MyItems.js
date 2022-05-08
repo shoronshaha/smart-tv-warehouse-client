@@ -13,7 +13,7 @@ const MyItems = () => {
     useEffect(() => {
         const getAddItems = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/addItem?email=${email}`;
+            const url = `https://gentle-depths-90710.herokuapp.com/addItem?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -37,7 +37,7 @@ const MyItems = () => {
     const AddItemDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/addItem/${id}`;
+            const url = `https://gentle-depths-90710.herokuapp.com/addItem/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -74,7 +74,7 @@ const MyItems = () => {
                                         <p className='text-xl mb-2'>Price:$ {addItem.price}</p>
 
 
-                                        <button onClick={() => AddItemDelete(addItem._id)} type="button" className=" inline-block px-6 py-2.5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">Delete</button>
+                                        <button onClick={() => AddItemDelete(addItem._id)} type="button" className=" inline-block px-6 py-2.5 bg-orange-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-800 active:shadow-lg transition duration-150 ease-in-out">Delete</button>
                                     </div>
                                 </div>
                             </div>
