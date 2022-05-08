@@ -9,7 +9,7 @@ const Item = ({ manageItem }) => {
         navigate(`/item/${_id}`);
     }
     return (
-        <div className="flex justify-center m-10">
+        <div className="flex justify-center m-5">
 
             <div className="rounded-lg shadow-lg bg-white max-w-sm">
                 <h5 className="text-purple-700 font-bold text-center mt-3 text-3xl mb-5">{brand}</h5>

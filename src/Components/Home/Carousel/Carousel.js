@@ -34,7 +34,7 @@ const Carousel = () => {
                         alt="..."
                     />
                     <div className="carousel-caption md:block absolute md:text-left md:position-0">
-                        <h5 className="text-2xl">Welcome to my SMART TV warehouse</h5>
+                        <h5 className="text-[3vw] text-center">Welcome to my SMART TV warehouse</h5>
 
                     </div>
                 </div>
