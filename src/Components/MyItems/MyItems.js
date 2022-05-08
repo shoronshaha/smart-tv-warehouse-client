@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../Firebase/Firebase.init';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const MyItems = () => {
     const [user] = useAuthState(auth)
@@ -50,6 +51,7 @@ const MyItems = () => {
     }
     return (
         <div>
+            <PageTitle title='MyItems'></PageTitle>
             <h2 className='my-5 text-3xl text-center'>Your Items:{addItems.length}</h2>
 
             {

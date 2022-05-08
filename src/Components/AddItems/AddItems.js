@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import userEvent from '@testing-library/user-event';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/Firebase.init';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const AddItems = () => {
     const [user] = useAuthState(auth);
@@ -24,23 +24,18 @@ const AddItems = () => {
             img: event.target.img.value,
         };
         await axios.post('http://localhost:5000/addItem', addItem)
-            // if (!data.success) {
-            //     return toast.error(data.error)
-            // }
-            // toast.success(data.message);
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
                     toast('your item is added !!');
                     event.target.reset();
                 }
-
-
             })
     }
 
     return (
         <div className="mt-20 w-full">
+            <PageTitle title='AddItems'></PageTitle>
             <div className="bg-gray-200 p-10 md:w-3/4 lg:w-1/2 mx-auto">
                 <form onSubmit={handleSubmit}>
                     <div className="flex items-center mb-5">

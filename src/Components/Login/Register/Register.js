@@ -9,6 +9,7 @@ import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 
 
@@ -48,6 +49,7 @@ const Register = () => {
 
     return (
         <div>
+            <PageTitle title='Register'></PageTitle>
             <form onSubmit={handleRegister} className="justify-center items-center w-full shadow rounded-lg bg-white px-6 flex flex-col md:w-1/2 lg:w-1/3 m-auto my-20">
                 <h2 className="text-3xl my-4 font-bold">REGISTER</h2>
                 <div className="w-full p-2 justify-start flex flex-col">

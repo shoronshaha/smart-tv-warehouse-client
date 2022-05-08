@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 
 const ItemDetails = () => {
@@ -57,6 +58,7 @@ const ItemDetails = () => {
 
     return (
         <div>
+            <PageTitle title='ItemsDetails'></PageTitle>
             <div className='grid grid-cols-1 text-center justify-items-center'>
                 <div className="flex justify-center mt-6">
 

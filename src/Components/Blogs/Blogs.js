@@ -1,9 +1,11 @@
 import React from 'react';
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const Blogs = () => {
     return (
 
         <div>
+            <PageTitle title='Blogs'></PageTitle>
             <h1 className='text-5xl text-center mt-3 text-orange-500 font-bold'>BLOGS</h1>
             <div className='justify-items-center mt-10 grid sm:grid-cols-1 md:grid-cols-2'>
 

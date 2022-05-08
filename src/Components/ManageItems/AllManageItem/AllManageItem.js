@@ -2,6 +2,7 @@ import React from 'react';
 import useManageItems from '../../Hooks/useManageItems';
 import icon from '../../../Images/Logo/delete.png'
 import { Link } from 'react-router-dom';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const AllManageItem = () => {
     const [manageItems, setManageItems] = useManageItems();
@@ -25,6 +26,7 @@ const AllManageItem = () => {
 
     return (
         <div className="lg:m-15 md:m-10 relative overflow-x-auto shadow-md sm:rounded-lg">
+            <PageTitle title='AllManageItems'></PageTitle>
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>

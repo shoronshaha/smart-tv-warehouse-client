@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import axios from 'axios';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -68,6 +69,7 @@ const Login = () => {
 
     return (
         <div>
+            <PageTitle title='Login'></PageTitle>
             <form onSubmit={handleSubmit} className="justify-center items-center w-full shadow rounded-lg bg-white px-6 flex flex-col md:w-1/2 lg:w-1/3 m-auto my-20">
                 <h2 className="text-3xl my-4 font-bold ">LOGIN</h2>
                 <div className="w-full p-2 justify-start flex flex-col">
