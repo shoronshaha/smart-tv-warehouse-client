@@ -61,7 +61,7 @@ const Testimonial = () => {
                 {
                     testimonials.map(testimonial => {
                         return (
-                            <div key={testimonial._id} className='px-4 pt-5 pb-24 mx-auto max-w-7xl md:px-2'>
+                            <div key={testimonial._id} className='px-4 pt-5 pb-10 mx-auto max-w-7xl md:px-2'>
 
                                 <div className='grid grid-cols-1 justify-items-center'>
                                     <div className='rounded-lg shadow-lg bg-gray-100 max-w-sm-[2rem] p-5 h-[400px] hover:bg-blue-50 mx-2 my-3'>
