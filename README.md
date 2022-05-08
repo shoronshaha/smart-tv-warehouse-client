@@ -2,7 +2,7 @@
 ## [Live site link](https://warehouse-auth-server.web.app/)
 [https://warehouse-auth-server.web.app/](https://warehouse-auth-server.web.app/)
 ## [Stack Overflow link](https://stackoverflow.com/questions/72162075/this-questions-for-basic-knowledge)
-[https://stackoverflow.com/questions/72162075/this-questions-for-basic-knowledge](https://stackoverflow.com/questions/72162075/this-questions-for-basic-knowledge)
+[https://stackoverflow.com/questions/72162075/this-questions-for-basic-knowledge](https://stackoverflow.com/questions/72162075/this-questions-for-basic-knowledgee)
 ## Project Description
 * Here I have created a website about a Smart TV Warehouse.
 * Here I have created Login and Register option.
