@@ -20,7 +20,7 @@ function App() {
 
   return (
 
-    <div className='bg-pink-200'>
+    <div className='bg-[#cce3de]'>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

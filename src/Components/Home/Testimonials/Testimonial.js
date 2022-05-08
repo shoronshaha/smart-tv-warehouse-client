@@ -55,7 +55,10 @@ const Testimonial = () => {
     };
 
     return (
+
+
         <div className=' my-10'>
+            <h1 className='md:text-[4vw] font-bold text-center'>TESTIMONIAL</h1>
             <Slider  {...settings}>
 
                 {
@@ -89,7 +92,6 @@ const Testimonial = () => {
                 }
             </Slider >
         </div >
-
     );
 };
 

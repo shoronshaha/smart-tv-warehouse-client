@@ -36,10 +36,10 @@ const AddItems = () => {
     return (
         <div className="mt-20 w-full">
             <PageTitle title='AddItems'></PageTitle>
-            <div className="bg-gray-200 p-10 md:w-3/4 lg:w-1/2 mx-auto">
+            <div className="bg-[#a4c3b2] p-10 md:w-3/4 lg:w-1/2 mx-auto">
                 <form onSubmit={handleSubmit}>
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Brand Name
                         </label>
                         <input
@@ -53,7 +53,7 @@ const AddItems = () => {
 
                     </div>
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Email
                         </label>
                         <input
@@ -68,7 +68,7 @@ const AddItems = () => {
                         />
                     </div>
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Price
                         </label>
                         <input
@@ -81,7 +81,7 @@ const AddItems = () => {
                         />
                     </div>
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Quantity
                         </label>
                         <input
@@ -94,7 +94,7 @@ const AddItems = () => {
                         />
                     </div>
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Supplier Name
                         </label>
                         <input
@@ -108,7 +108,7 @@ const AddItems = () => {
                     </div>
 
                     <div className="flex items-center mb-5">
-                        <label className="inline-block w-40 mr-6 text-right font-bold text-gray-600">
+                        <label className="inline-block w-40 mr-6 text-right font-bold text-black">
                             Description
                         </label>
                         <input
@@ -124,7 +124,7 @@ const AddItems = () => {
                     <div className="flex items-center mb-10">
                         <label
                             className="inline-block w-40 mr-6 text-right
-                                    font-bold text-gray-600"
+                                    font-bold text-black"
                         >
                             Image
                         </label>
@@ -139,7 +139,7 @@ const AddItems = () => {
                     </div>
 
                     <div className="text-right">
-                        <button type='submit' className="py-3 px-8 bg-green-400 text-white font-bold">Add</button>
+                        <button type='submit' className="py-3 px-8 bg-orange-600 text-white font-bold">Add</button>
                     </div>
                 </form>
             </div>

@@ -63,7 +63,7 @@ const MyItems = () => {
                                 <div className="rounded-lg shadow-lg bg-white max-w-sm">
                                     <h5 className="text-purple-700 font-bold  text-3xl mb-5">{addItem.brand}</h5>
                                     <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
-                                        <img style={{ width: '100%', height: '250px' }} className="rounded-t-lg" src={addItem.img} alt="" />
+                                        <img style={{ width: '90%', height: '250px' }} className="rounded-t-lg justify-center ml-5" src={addItem.img} alt="" />
                                     </a>
                                     <div className="p-6">
                                         <h4>Supplier:{addItem.supplierName}</h4>
